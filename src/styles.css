@@ -1,0 +1,40 @@
+@import "tailwindcss" source("../");
+
+@theme {
+  --color-ink: #0f2a44;
+  --color-ink-soft: #1d3d5e;
+  --color-brass: #c9973e;
+  --color-brass-light: #e8c987;
+  --color-brass-dark: #a87a2a;
+  --color-cream: #f7f2e9;
+  --color-paper: #fbf8f2;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+.grain {
+  background-image: radial-gradient(rgb(15 42 68 / 0.06) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.rise { animation: rise 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.rise-2 { animation-delay: 0.12s; }
+.rise-3 { animation-delay: 0.24s; }
+.rise-4 { animation-delay: 0.36s; }
