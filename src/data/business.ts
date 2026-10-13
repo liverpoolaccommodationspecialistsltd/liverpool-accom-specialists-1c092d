@@ -2,7 +2,7 @@
 export const business = {
   name: 'Liverpool Accommodation Specialists Ltd',
   shortName: 'Liverpool Accommodation Specialists',
-  email: 'liverpoolaccomodationspecial@gmail.com',
+  email: 'liverpoolaccommodationspecial@gmail.com',
   phoneDisplay: '07793 812564',
   phoneHref: 'tel:+447793812564',
   region: 'Liverpool & the North West',
